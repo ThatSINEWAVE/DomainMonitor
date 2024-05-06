@@ -56,14 +56,13 @@ while True:
             log_entry = f"{current_time} - {ping_time} ms"
             if domain not in log:
                 log[domain] = []
-            log[domain].append(log_entry)
-            log[domain] = log[domain][-10:]  # Keep only the last 10 entries
+            log[domain].append(log_entry)  # Keep all entries
 
             # Check if the status has changed since the last check
             if (status, ping_status, ping_time) != last_check.get(domain, None):
                 # Send a formatted message to the Discord channel
                 webhook = DiscordWebhook(url=webhook_url)
-                history = '\n'.join(log[domain])
+                history = '\n'.join(log[domain][-10:])  # Show only the last 10 entries in the embed
                 embed = {
                     'description': f"{':green_circle:' if status == 'Online' else ':red_circle:'} **{domain.replace('https://', '').replace('http://', '').upper()} IS {status.upper()}**\n\n"
                                    f"**Status**\n{status}\n\n"
@@ -71,7 +70,7 @@ while True:
                                    f"**Response Time**\n{ping_time} ms\n\n"
                                    f"**History**\n{history}\n\n",
                     'color': 0x00ff00 if status == 'Online' else 0xff0000,
-                    'thumbnail': {'url': 'https://i.imgur.com/GwZXlYq.png'},  # Placeholder thumbnail
+                    'thumbnail': {'url': 'https://i.imgur.com/GwZXlYq.png'},  # Embed thumbnail
                     'footer': {'text': 'The Task Force Monitor'}
                 }
                 webhook.add_embed(embed)
@@ -91,12 +90,11 @@ while True:
             log_entry = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {ping_status}"
             if domain not in log:
                 log[domain] = []
-            log[domain].append(log_entry)
-            log[domain] = log[domain][-10:]  # Keep only the last 10 entries
+            log[domain].append(log_entry)  # Keep all entries
 
             # Send a formatted message to the Discord channel
             webhook = DiscordWebhook(url=webhook_url)
-            history = '\n'.join(log[domain])
+            history = '\n'.join(log[domain][-10:])  # Show only the last 10 entries in the embed
             embed = {
                 'description': f"{':red_circle:'} **{domain.replace('https://', '').replace('http://', '').upper()} IS {status.upper()}**\n\n"
                                f"**Status**\n{status}\n\n"
@@ -104,7 +102,7 @@ while True:
                                f"**Response Time**\n{ping_time} ms\n\n"
                                f"**History**\n{history}\n\n",
                 'color': 0xff0000,
-                'thumbnail': {'url': 'https://i.imgur.com/GwZXlYq.png'},  # Placeholder thumbnail
+                'thumbnail': {'url': 'https://i.imgur.com/GwZXlYq.png'},  # Embed thumbnail
                 'footer': {'text': 'The Task Force Monitor'}
             }
             webhook.add_embed(embed)
@@ -120,7 +118,7 @@ while True:
         json.dump(log, f, indent=4)
 
     # Wait for a specified time before checking again
-    time.sleep(3600)  # 1 hour
+    time.sleep(60)  # Timer
 
 # Console commands
 while True:
