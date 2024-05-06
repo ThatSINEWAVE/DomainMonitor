@@ -22,9 +22,9 @@ Webhook-Watcher is a Python script designed to monitor the status of specified d
 ## Prerequisites
 
 - Python 3.x
-- Required Python packages (`requests`, `discord_webhook`, `python-dotenv`), which can be installed via pip:
+- Required Python packages (`requests`, `discord-webhook`, `python-dotenv`), which can be installed via pip:
   ```bash
-  pip install requests discord_webhook python-dotenv
+  pip install -r requirements.txt
   ```
 
 ## Usage
