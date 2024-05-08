@@ -37,7 +37,7 @@ The project structure includes the following files and directories:
 
 ## Requirements
 
-Webhook Watcher relies on the following Python libraries:
+DomainMonitor relies on the following Python libraries:
 
 - `whois`: For retrieving WHOIS information.
 - `requests`: For making HTTP requests.
@@ -47,18 +47,18 @@ Webhook Watcher relies on the following Python libraries:
 
 ## Installation
 
-To install Webhook Watcher and its dependencies, follow these steps:
+To install DomainMonitor and its dependencies, follow these steps:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/Webhook-Watcher.git
+   git clone https://github.com/yourusername/DomainMonitor.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Webhook-Watcher
+   cd DomainMonitor
    ```
 
 3. Install the required dependencies:
