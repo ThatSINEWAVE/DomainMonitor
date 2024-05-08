@@ -1,0 +1,71 @@
+{
+    "logs": [
+        {
+            "timestamp": "2024-05-08 06:14:09",
+            "data": {
+                "ping_time": 141.93900000000002,
+                "whois": {
+                    "domain_name": [
+                        "GITHUB.COM",
+                        "github.com"
+                    ],
+                    "registrar": "MarkMonitor, Inc.",
+                    "whois_server": "whois.markmonitor.com",
+                    "referral_url": null,
+                    "updated_date": "2022-09-07 09:10:44",
+                    "creation_date": "2007-10-09 18:20:50",
+                    "expiration_date": [
+                        "2024-10-09 18:20:50",
+                        "2024-10-09 00:00:00"
+                    ],
+                    "name_servers": [
+                        "DNS1.P08.NSONE.NET",
+                        "DNS2.P08.NSONE.NET",
+                        "DNS3.P08.NSONE.NET",
+                        "DNS4.P08.NSONE.NET",
+                        "NS-1283.AWSDNS-32.ORG",
+                        "NS-1707.AWSDNS-21.CO.UK",
+                        "NS-421.AWSDNS-52.COM",
+                        "NS-520.AWSDNS-01.NET",
+                        "dns4.p08.nsone.net",
+                        "ns-1707.awsdns-21.co.uk",
+                        "ns-1283.awsdns-32.org",
+                        "dns1.p08.nsone.net",
+                        "ns-520.awsdns-01.net",
+                        "dns3.p08.nsone.net",
+                        "ns-421.awsdns-52.com",
+                        "dns2.p08.nsone.net"
+                    ],
+                    "status": [
+                        "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                        "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                        "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                        "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+                        "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+                        "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"
+                    ],
+                    "emails": [
+                        "abusecomplaints@markmonitor.com",
+                        "whoisrequest@markmonitor.com"
+                    ]
+                },
+                "ip": {
+                    "status": "success",
+                    "isp": "GitHub, Inc.",
+                    "org": "GitHub, Inc.",
+                    "as": "AS36459 GitHub, Inc.",
+                    "asname": "GITHUB",
+                    "reverse": "lb-140-82-121-4-fra.github.com",
+                    "mobile": false,
+                    "proxy": false,
+                    "hosting": false,
+                    "query": "140.82.121.4"
+                }
+            },
+            "changes": {
+                "message": "No changes detected",
+                "diff": ""
+            }
+        }
+    ]
+}
