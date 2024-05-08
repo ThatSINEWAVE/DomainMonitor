@@ -27,11 +27,11 @@ DomainMonitor is a Python-based monitoring tool designed to track changes in spe
 
 The project structure includes the following files and directories:
 
-- **`monitors/`**: Directory containing monitor configurations.
-- **`model/domain.json`**: Configuration template for domain information.
+- **`monitors/`**: Directory containing template monitor configurations.
+- **`model/domain.json`**: Configuration template for the monitored domain.
 - **`model/webhook.json`**: Configuration template for webhook URL.
-- **`model/log.json`**: Template for log data.
-- **`monitor.py`**: Python script for monitoring domains.
+- **`model/log.json`**: Template for log data for the monitored domain.
+- **`model/monitor.py`**: Python script for monitoring domains.
 - **`deploy-monitor.py`**: Script for deploying new monitors.
 - **`deployer.log`**: Log file for deployment activities.
 
