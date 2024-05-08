@@ -1,8 +1,8 @@
 <div align="center">
 
-# Webhook Watcher
+# DomainMonitor
 
-Webhook Watcher is a Python-based monitoring tool designed to track changes in specified domains and notify users via Discord webhooks. It facilitates monitoring various aspects of a domain, including ping time, WHOIS information, and IP details, and sends notifications when changes are detected.
+DomainMonitor is a Python-based monitoring tool designed to track changes in specified domains and notify users via Discord webhooks. It facilitates monitoring various aspects of a domain, including ping time, WHOIS information, and IP details, and sends notifications when changes are detected.
 
 </div>
 
